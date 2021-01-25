@@ -38,6 +38,6 @@ to load the front-end just enter the front / web folder and run the following co
 $ yarn install
 $ yarn start
 ```
-<img src="https://github.com/Davi-Massaru/GeoDatas/blob/main/recorder.gif?raw=true"></img>
+<img src="https://raw.githubusercontent.com/Davi-Massaru/GeoDatas/main/recorder.gif"></img>
 
 
