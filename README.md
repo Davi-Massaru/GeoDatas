@@ -48,11 +48,24 @@ $ yarn start
 
 <img src="https://github.com/Davi-Massaru/GeoDatas/blob/main/recorder.gif?raw=true"></img>
 
+In the front-end we have an example of how we can view the data returned by the REST API
+
+In the example we have delivery people who are linked to restaurants.
+
+Clicking on the map We define an observation point, the COUNT field defines how many deliverers the API will return, and the restaurantID field will only search for deliverers from the desired restaurant.
+
+Example if we click anywhere and fill
+COUNT 1 and restaurantID 2
+The delivery man closest to the chosen point, who works for the restaurant with ID 2, will appear
+
+
 ## About the projet
 
 The project allows to carry out queries related to distance, for data that have the attributes of latitude and longtude, through SQL variables.
 
 From the User.SQLvar class we have the methods "Distance" and "LocalityIsWithin" that we can use to make these calculations based on the Haversine formula.
 
+
+## 
 
 
