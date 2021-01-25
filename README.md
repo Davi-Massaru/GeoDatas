@@ -40,4 +40,11 @@ $ yarn start
 ```
 <img src="https://github.com/Davi-Massaru/GeoDatas/blob/main/recorder.gif?raw=true"></img>
 
+## About the projet
+
+The project allows to carry out queries related to distance, for data that have the attributes of latitude and longtude, through SQL variables.
+
+From the User.SQLvar class we have the methods "Distance" and "LocalityIsWithin" that we can use to make these calculations based on the Haversine formula.
+
+
 
