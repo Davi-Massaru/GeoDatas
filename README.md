@@ -32,12 +32,20 @@ Run the IRIS container with your project:
 $ docker-compose up -d
 ```
 
-to load the front-end just enter the front / web folder and run the following commands
+## Install Front-End
+
+Create and configure your token at https://account.mapbox.com/auth/signin/ and copy to file ".env.exemple"  in ```/front/web/.env.exemple```
+Rename the file to ```.env```
+
+
+To load the front-end just enter the front / web folder and run the following commands
 
 ```
 $ yarn install
 $ yarn start
 ```
+
+
 <img src="https://github.com/Davi-Massaru/GeoDatas/blob/main/recorder.gif?raw=true"></img>
 
 ## About the projet
