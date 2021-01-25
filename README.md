@@ -31,6 +31,13 @@ Run the IRIS container with your project:
 ```
 $ docker-compose up -d
 ```
+
+to load the front-end just enter the front / web folder and run the following commands
+
+```
+$ yarn install
+$ yarn start
+```
 <img src="https://github.com/Davi-Massaru/GeoDatas/blob/main/recorder.gif?raw=true"></img>
 
 
