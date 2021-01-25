@@ -65,6 +65,31 @@ The project allows to carry out queries related to distance, for data that have 
 
 From the User.SQLvar class we have the methods "Distance" and "LocalityIsWithin" that we can use to make these calculations based on the Haversine formula.
 
+Examples of SQL commands
+
+Checking the distance between Deliveryman and Restaurant
+
+```
+SELECT 
+IrisFood.Deliveryman.*,
+Distance(latitude,longitude,Restaurant->latitude,Restaurant->longitude ) As  DistanceToRestaurant
+FROM IrisFood.Deliveryman
+ORDER BY DistanceToRestaurant
+```
+
+Checking the Deliveryman closest to restaurant 1 within a 5km radius
+
+```
+SELECT 
+Top 1
+IrisFood.Deliveryman.*,
+Distance(latitude,longitude,Restaurant->latitude,Restaurant->longitude ) AS Distance
+FROM IrisFood.Deliveryman
+Where 
+LocalityIsWithin(latitude,longitude,Restaurant->latitude,Restaurant->longitude, 5) =1 AND 
+Restaurant = 1
+ORDER BY Distance
+```
 
 ## 
 
