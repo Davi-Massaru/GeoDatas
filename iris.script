@@ -1,0 +1,12 @@
+DO $System.OBJ.LoadDir("/opt/irisbuild/src","ck",,1)
+
+zn "%SYS"
+Do ##class(Security.Users).UnExpireUserPasswords("*")
+
+zn "USER"
+zpm "load /opt/irisbuild/ -v":1:1
+
+do ##class(IrisFood.Restaurant).Populate(10)
+do ##class(IrisFood.Deliveryman).Populate(1000)
+
+halt

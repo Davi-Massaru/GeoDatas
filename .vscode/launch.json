@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [    
+      {
+        "type": "objectscript",
+        "request": "launch",
+        "name": "ObjectScript Debug Class", 
+        "program": "##class(IrisFood.Service.DeliverymanService).GetTopNearest(-23.44487,-46.45976)",
+      },
+      {
+        "type": "objectscript",
+        "request": "attach",
+        "name": "ObjectScript Attach",
+        "processId": "${command:PickProcess}",
+        "system": true
+      }
+    ]
+  }
